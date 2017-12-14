@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to left top, #5efce8, #736efe) fixed;
+        }
+
+        #buttonContainer {
+            margin-top: 50px;
+        }
+
+        #calculator {
+
+            margin-top: 30px;
+        }
+
+        #screen {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: 'Roboto';
+        }
+
+        #period {
+            padding:20px 22px 20px 20px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 20px;
+            outline: 1px solid black;
+            background-color: transparent;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="calculator">
+        <div id="screen">
+
+        </div>
+
+        <div id="buttonContainer">
+            <div class="buttons">
+                <button class="num" data-num="1">1</button>
+                <button class="num" data-num="2">2</button>
+                <button class="num" data-num="3">3</button>
+                <button class="operator" data-ops="+">+</button>
+
+            </div>
+            <div class="buttons">
+                <button class="num" data-num="4">4</button>
+                <button class="num" data-num="5">5</button>
+                <button class="num" data-num="6">6</button>
+                <button class="operator" data-ops="-">-</button>
+            </div>
+            <div class="buttons">
+                <button class="num" data-num="7">7</button>
+                <button class="num" data-num="8">8</button>
+                <button class="num" data-num="9">9</button>
+                <button class="operator" data-ops="*">*</button>
+            </div>
+            <div class="buttons">
+                <button class="num" data-num="0" id="zero">0</button>
+                <button class="num" data-num="." id = "period">.</button>
+                <button id="calc">=</button>
+                <button class="operator" data-ops="/">/</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="Calculator.js"></script>
+
+
+</html>
